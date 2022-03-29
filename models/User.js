@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-const thoughtSchema = require('./Thought')
+//const thoughtSchema = require('./Thought')
 
  const userSchema = new Schema(
      {
@@ -13,9 +13,14 @@ const thoughtSchema = require('./Thought')
             type: String,
             require: 'You MUST enter a valid email address',
             unique: true,
-            match: [/.+@.+\..+/, 'Please enter a valid e-mail address']
+            match: [/^([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})$/]
           },
-          thoughts: [thoughtSchema],
+          thoughts: [
+            {
+              type: Schema.Types.ObjectId,
+              ref: 'Thought',
+            }
+          ],
           friends: [
             {
               type: Schema.Types.ObjectId,

@@ -42,13 +42,10 @@ const thoughtSchema = new Schema(
             default: Date.now,
             get: createdAtVal => dateFormat(createdAtVal)
           },
-          username: [
-            {
-              type: String,
-              required: true,
-              ref: 'User'
-            }
-          ],
+          username: {
+            type: String,
+            required: true
+        },
           reactions: [reactionSchema]
      },
      {
