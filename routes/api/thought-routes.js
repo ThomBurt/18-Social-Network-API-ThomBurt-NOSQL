@@ -28,9 +28,13 @@ const {
     .delete(deleteThought);
 
   router
-    .route('/:id/reactions')
+    .route('/:thoughtId/reactions')
     .post(addNewReaction)
-    .delete(removeReaction)
+
+  // /api/thoughts/:thoughtId/reactions/:reactionId
+  router
+   .route('/:thoughtId/reactions/:reactionId')
+   .delete(removeReaction);
 
 
 module.exports = router;
