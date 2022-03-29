@@ -1,11 +1,15 @@
 ## Screencastify video
 https://drive.google.com/file/d/1hqQCYHp-TnPOKueGtTWZvcms9Xo_JzXs/view
 
+## Description
+In this challenge we were given the task to create an API for a social media like product, where a user can leave thoughts and reactions.
+
+We used MongoDB and mongoose to create the NOSQL database, and as always I used nodemon extremely heavily while I was working on the API connections, as I was playing around with different code.
+
 ## User Story
 AS A social media startup
 I WANT an API for my social network that uses a NoSQL database
 SO THAT my website can handle large amounts of unstructured data
-
 
 ## Acceptance Criteria
 GIVEN a social network API
