@@ -1,3 +1,6 @@
+## Screencastify video
+https://drive.google.com/file/d/1hqQCYHp-TnPOKueGtTWZvcms9Xo_JzXs/view
+
 ## User Story
 AS A social media startup
 I WANT an API for my social network that uses a NoSQL database
